@@ -1,0 +1,8 @@
+{  
+  "student": {  
+    "firstName": "Alice",  
+    "lastName": "Smith",  
+    "age": 17,  
+    "grade": 11  
+  }  
+}  

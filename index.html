@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <p>Nothing to show </p>
+    <p>Want to see something.....!</p>
+    <b>Please Login</b>
+
+    <script src="script.js"></script>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>  
+<html>  
+<head>  
+  <title>JSON Example</title>  
+</head>  
+<body>  
+  <div id="output"></div>  
+
+  <script>  
+    fetch('data.json')  
+      .then(response => response.json())  
+      .then(data => {  
+        printData(data);  
+      })  
+      .catch(error => console.error('Error fetching JSON:', error));  
+
+    function printData(data) {  
+      console.log("First Name:", data.student.firstName);  
+
+      let outputDiv = document.getElementById('output');  
+      if (outputDiv) {  
+        let studentInfo = `  
+          <p>First Name: ${data.student.firstName}</p>  
+          <p>Last Name: ${data.student.lastName}</p>  
+        `;  
+        outputDiv.innerHTML = studentInfo;  
+      } else {  
+        console.warn("Output div not found!");  
+      }  
+    }  
+  </script>  
+</body>  
+</html>   -->
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>JSON Example</title>  
+</head>  
+<body>  
+    <p id="time-out">Successfully logged in !</p>
+  <h1>Student Information</h1>  
+  <div id="studentInfo"></div>  
+
+  <script src="script.js"></script>  
+  <a href="login_page.html">LOGOUT</a>
+</body>  
+</html>  
