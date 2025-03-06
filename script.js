@@ -1,6 +1,23 @@
 
 
+// window.open("https://newpage.com", "_blank"); // Opens a new tab
+// let executed = false;
 
+// function runOnce() {
+//   if (!executed) {
+//     // Your statement to execute only once
+//     console.log("This will run only once.");
+//     window.location.href = ""; 
+//     executed = true;
+
+//   } else {
+//     console.log("Statement already executed.");
+//   }
+// }
+if (!sessionStorage.getItem("redirected")) {
+  sessionStorage.setItem("redirected", "true");  
+  window.location.href = "login_page.html";  
+}
 
 
 // Function to fetch and process the JSON data  
